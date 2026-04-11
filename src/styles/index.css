@@ -1,0 +1,390 @@
+/* ===========================
+   GLOBAL STYLES - John Doe Portfolio
+   =========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6, strong, .fw-semibold {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* ===========================
+   SECTION TITLE STYLE
+   =========================== */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section-title p {
+  color: #6c757d;
+  margin-bottom: 0.75rem;
+}
+
+.section-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #0d6efd;
+  margin: 0 auto 2rem auto;
+  border: none;
+}
+
+/* ===========================
+   HEADER / NAVBAR
+   =========================== */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: text-decoration 0.2s ease;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===========================
+   PAGE BANNER (Services, Portfolio)
+   =========================== */
+.page-banner {
+  width: 100%;
+  height: 200px;
+  background-image: url('../assets/images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  .page-banner {
+    height: 120px;
+  }
+}
+
+/* ===========================
+   ABOUT SECTION (Home)
+   =========================== */
+.about-section {
+  padding: 3rem 0;
+}
+
+.about-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* ===========================
+   SKILLS / PROGRESS BARS
+   =========================== */
+.skills-section {
+  padding: 1rem 0;
+}
+
+.skill-label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 6px;
+  background-color: #e9ecef;
+  margin-bottom: 1.2rem;
+}
+
+.progress-bar {
+  border-radius: 6px;
+}
+
+/* ===========================
+   CARDS (Services & Portfolio)
+   =========================== */
+.card {
+  border: 1px solid #dee2e6;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Services card specific */
+.service-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  height: 100%;
+}
+
+.service-card .bi {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Portfolio card specific */
+.portfolio-card {
+  height: 100%;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-card .card-body {
+  text-align: center;
+}
+
+.portfolio-card .card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.portfolio-card .card-footer {
+  background-color: #f8f9fa;
+  font-size: 0.85rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+.btn {
+  transition: background-color 0.3s ease, border-color 0.3s ease, filter 0.3s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.85);
+}
+
+.btn-danger:hover {
+  filter: brightness(0.85);
+}
+
+/* ===========================
+   CONTACT PAGE
+   =========================== */
+.contact-section {
+  padding: 3rem 0;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-map {
+  width: 100%;
+  height: 340px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.form-control {
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   MENTIONS LÉGALES
+   =========================== */
+.mentions-section {
+  padding: 3rem 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #dbeafe;
+  color: #0d6efd;
+}
+
+/* ===========================
+   MODAL GITHUB
+   =========================== */
+.github-modal-avatar {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.github-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 0.95rem;
+}
+
+.github-info-item:last-child {
+  border-bottom: none;
+}
+
+.github-info-item .bi {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  background-color: #212529;
+  color: #adb5bd;
+  padding: 3rem 0 2rem;
+}
+
+footer h5 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer address {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  font-style: normal;
+}
+
+footer a {
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: font-weight 0.2s ease, color 0.2s ease;
+}
+
+footer a:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 0.75rem;
+  font-size: 1.4rem;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fff;
+  font-weight: 400;
+}
+
+/* ===========================
+   RESPONSIVE FOOTER
+   =========================== */
+@media (max-width: 768px) {
+  footer .col-md-4 {
+    margin-bottom: 2rem;
+  }
+}
