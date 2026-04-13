@@ -48,7 +48,7 @@ function Footer() {
 
           {/* Colonne 2 : Liens utiles */}
           <div className="col-md-4 mb-4 mb-md-0">
-            <h5>Liens utiles</h5>
+            <h3>Liens utiles</h3>
             <ul>
               <li><Link to="/">Accueil</Link></li>
               <li><Link to="/services">Services</Link></li>
@@ -60,7 +60,7 @@ function Footer() {
 
           {/* Colonne 3 : Dernières réalisations */}
           <div className="col-md-4">
-            <h5>Mes dernières réalisations</h5>
+            <h3>Mes dernières réalisations</h3>
             <ul>
               <li><Link to="/portfolio">Fresh Food</Link></li>
               <li><Link to="/portfolio">Restaurant Akira</Link></li>
