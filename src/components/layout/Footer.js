@@ -9,7 +9,7 @@ function Footer() {
 
           {/* Colonne 1 : Coordonnées + réseaux sociaux */}
           <div className="col-md-4 mb-4 mb-md-0">
-            <h5>John Doe</h5>
+            <h3>John Doe</h3>
             <address>
               <p>
                 40 rue Laure Diebold<br />
