@@ -43,6 +43,7 @@ function MentionsLegales() {
             <div
               id="collapseEditeur"
               className="accordion-collapse collapse show"
+              role="region"  
               aria-labelledby="headingEditeur"
               data-bs-parent="#mentionsAccordion"
             >
@@ -85,6 +86,7 @@ function MentionsLegales() {
             <div
               id="collapseHebergeur"
               className="accordion-collapse collapse"
+              role="region"  
               aria-labelledby="headingHebergeur"
               data-bs-parent="#mentionsAccordion"
             >
@@ -122,6 +124,7 @@ function MentionsLegales() {
             <div
               id="collapseCredits"
               className="accordion-collapse collapse"
+              role="region"  
               aria-labelledby="headingCredits"
               data-bs-parent="#mentionsAccordion"
             >
